@@ -139,7 +139,7 @@ const XrefInfo pin_xref[] PROGMEM = {
 #endif
 #define TOSTRING(x) __STRINGIFY(x)
 #define _STM32_PLATDEFPATH(x) TOSTRING(platdefs/x.h)
-#if defined(_STM32_PLATDEFS)
+#ifdef _STM32_PLATDEFS
   #if __has_include(_STM32_PLATDEFPATH(_STM32_PLATDEFS))
     #include _STM32_PLATDEFPATH(_STM32_PLATDEFS)
   #endif
