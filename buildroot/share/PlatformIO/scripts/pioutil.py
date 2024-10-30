@@ -2,6 +2,8 @@
 # pioutil.py
 #
 
+pio_share = "buildroot/share/PlatformIO"
+
 from SCons.Script import DefaultEnvironment
 env = DefaultEnvironment()
 
